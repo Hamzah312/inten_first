@@ -1,12 +1,17 @@
 /* Generic classes */
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
+    border-width: 2px;
+    padding: 16px 24px;
 }
+
 /* screen 1 */
 body {
     margin: 0;
+    font-size: 100%;
 }
 
 .screen1 {
@@ -15,15 +20,14 @@ body {
     justify-content: center;
     background-image: repeating-linear-gradient(-45deg, #60c0e8 5%, #64c2e8 10%),
         repeating-linear-gradient(#60c0e8 5%, #64c2e8 10%);
-    height: 100vh;
+    min-height: 100vh;
     color: whitesmoke;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-
-    margin: 0em 10em;
+    margin: 0em 10%;
     flex: 1;
 }
 
@@ -38,39 +42,43 @@ body {
     align-self: center;
 }
 
-.meet {
+.screen1-con {
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    width: 100%;
+}
+
+.screen1-texts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-self: flex-end;
-    margin: 0em 10em;
-    flex: 2;
+    align-self: flex-start;
+    margin-top: 3%;
+    padding-left: 3%;
 }
 
 .screen1-title {
     align-self: flex-end;
-    font: 80px 'Brush Script MT', cursive;
+    font: 4.5em 'Brush Script MT', cursive;
 }
 
 .detail {
-    font: normal 200 30px 'PT Sans', sans-serif;
+    font: normal 200 1.5em 'PT Sans', sans-serif;
 }
 
-.download {
+.screen1-btn {
     background-color: transparent;
     align-self: flex-end;
     border: solid whitesmoke;
-    border-radius: 3px;
-    border-width: 2px;
-    padding: 15px 25px;
     color: whitesmoke;
 }
 
-.btn-img {
-    display: flex;
-    justify-content: space-between;
-    margin: 0em 13em 0;
-    flex: 2;
+.red-phone {
+    height: auto;
+    max-width: 100%;
+    align-self: flex-end;
+    margin-top: 5%;
 }
 
 /* screen 2 */
@@ -78,7 +86,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #f4f4f4;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(0, 0, 0);
 }
 
@@ -87,42 +95,42 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-start;
-    margin-top: 8em;
-    margin-left: 12em;
+    margin-top: 12%;
+    margin-left: 12%;
 }
 
 .screen2-title {
-    flex: 1 ;
     color: #555555;
-    font: normal 200 30px 'PT Sans', sans-serif;
+    font: normal 200 1.5em 'PT Sans', sans-serif;
 }
 
 .screen2-paras {
-    flex: 2;
-    margin-top: 1em;
+    margin-top: 5%;
     color: #7e7e7e;
+    height: auto;
 }
 
 .screen2-para-one {
-    font: normal 200 14px 'Arial', sans-serif;
+    font: normal 200 1em 'Arial', sans-serif;
+    line-height: 1.6;
+    width: 40vw;
 }
 
 .screen2-para-two {
     border-left: solid #4dacdc;
     padding-left: 20px;
     border-width: 5px;
-    font: italic 200 14px 'Arial', sans-serif;
+    font: italic 200 1em 'Arial', sans-serif;
+    line-height: 1.6;
+    width: 40vw;
 }
 
 .screen2-btn {
     background-color: transparent;
     align-self: flex-start;
-    flex: 1;
     border: solid #14af8f;
-    border-radius: 3px;
-    border-width: 2px;
-    margin-top: 4em;
-    padding: 15px 25px;
+    margin-top: 8%;
+    margin-bottom: 4%;
     color: #14af8f;
 
 }
@@ -139,7 +147,7 @@ body {
     position: relative;
     justify-content: space-between;
     background-color: #ffffff;
-    height: 100vh;
+    min-height: 100vh;
     color: rgb(0, 0, 0);
 }
 
@@ -147,22 +155,23 @@ body {
     height: auto;
     max-width: 100%;
     align-self: flex-end;
+    margin-top: 20%;
 }
 
-.screen3-texts {
+.screen3-con {
     display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-start;
-    right: 25%;
-    top: 30%
+    right: 20%;
+    top: 8.5em;
 }
 
 .screen3-title {
     flex: 1;
     color: #464e59;
-    font: normal 30px 'PT Sans', sans-serif;
+    font: normal 1.5em 'PT Sans', sans-serif;
 }
 
 .screen3-paras {
@@ -172,14 +181,16 @@ body {
 }
 
 .screen3-para-one {
-    font: italic bold 14px 'PT Sans', sans-serif;
+    font: italic bold 1em 'PT Sans', sans-serif;
     color: #474e5e;
     line-height: 1.6;
+    width: 25vw;
 }
 
 .screen3-para-two {
-    font: normal 200 14px 'PT Sans', sans-serif;
+    font: normal 200 1em 'PT Sans', sans-serif;
     line-height: 1.6;
+    width: 25vw;
 }
 
 .screen3-btn {
@@ -187,10 +198,7 @@ body {
     align-self: flex-start;
     flex: 1;
     border: solid #ea4c89;
-    border-radius: 3px;
-    border-width: 2px;
-    margin-top: 2.5em;
-    padding: 15px 25px;
+    margin: 6% 0;
     color: #ea4c89;
 
 }
@@ -202,8 +210,8 @@ body {
     justify-content: center;
     align-items: center;
     background-image: repeating-linear-gradient(-45deg, #14c1ad, #19c4af 7%),
-                        repeating-linear-gradient(180deg, #14c1ad 5%, #19c4af 10%);
-    height: 40vh;
+        repeating-linear-gradient(180deg, #14c1ad 5%, #19c4af 10%);
+    min-height: 40vh;
     color: whitesmoke;
 }
 
@@ -212,10 +220,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5% 0;
 }
 
 .screen4-title {
-    font: normal 30px 'PT Sans', sans-serif;
+    font: normal 1.5em 'PT Sans', sans-serif;
 }
 
 .screen4-btn {
@@ -223,39 +232,44 @@ body {
     border: solid whitesmoke;
     border-radius: 3px;
     border-width: 2px;
-    padding: 15px 25px;
+    padding: 15px 24px;
     color: whitesmoke;
 }
 
 /** screen5 **/
-.screen5{
+.screen5 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #f4f4f4;
-    height: 100vh;
-   
+    min-height: 100vh;
+
 }
-.screen5-imgs{
+
+.screen5-imgs {
     display: flex;
     justify-content: center;
 }
-.screen5-imgs img{
+
+.screen5-imgs img {
     margin: 8%;
 }
-.screen5-con{
+
+.screen5-con {
     display: flex;
     justify-content: center;
-    margin-top: 4%;
+    margin: 4% 0 5%;
     text-align: center;
 }
-.screen5-con-text{
+
+.screen5-con-text {
     display: inline-flex;
-    font: italic bold 1rem 'PT Sans', sans-serif;
+    font: italic bold 1em 'PT Sans', sans-serif;
     color: #474e5e;
     align-items: center;
 }
+
 .screen5-input-icon {
     display: inline;
     position: relative;
@@ -263,7 +277,8 @@ body {
     border-style: none;
     margin-left: 10px;
 }
-.inputf{
+
+.inputf {
     border-style: none;
     border-radius: 5px;
     padding: 10px;
@@ -272,11 +287,157 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 /** Footer **/
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 20vh;
+    height: 15vh;
+}
+
+.footer-text {
+    font: normal 0.75em 'PT Sans', sans-serif;
+}
+
+/** media queries **/
+@media screen and (max-width: 800px) {
+    .screen1-con {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .red-phone {
+        align-self: center;
+        order: 2
+    }
+
+    .screen1-texts {
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+    .screen1-title {
+        font-size: 3em;
+    }
+
+    .detail {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .screen1-btn {
+        align-self: center;
+    }
+
+    .screen1-title {
+        align-self: center;
+    }
+
+    /** screen 2 */
+    .screen2 {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .screen2.con {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .screen2-texts {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin: 5% 0;
+    }
+
+    .screen2-paras {
+        height: auto;
+    }
+
+    .screen2-para-one {
+        line-height: normal;
+        border-top: 5px solid #4dacdc;
+        min-width: 228px;
+        padding: 12px 0;
+        margin-bottom: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 14%;
+
+    }
+
+    .screen2-para-one:hover {
+        text-overflow: clip;
+        overflow: visible;
+        white-space: wrap;
+        height: auto;
+    }
+
+    .screen2-para-two {
+        line-height: normal;
+        border-left: none;
+        border-top: 5px solid #4dacdc;
+        min-width: 228px;
+        padding: 12px 0;
+        margin-top: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        height: 14%;
+    }
+
+    .screen2-para-two:hover {
+        text-overflow: clip;
+        overflow: visible;
+        white-space: wrap;
+        height: auto;
+    }
+
+    .screen2-btn {
+        align-self: center;
+        margin: 2% 0 2%;
+    }
+
+    .yellow-phone {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .screen3 {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .screen3-con {
+        order: 1;
+        position: static;
+        align-self: center;
+        margin-top: 10%;
+        justify-content: center;
+    }
+
+    .devices {
+        align-self: center;
+        order: 2;
+        margin-top: 0;
+    }
+
+    .screen3-para-one {
+        min-width: 228px;
+    }
+
+    .screen3-para-two {
+        min-width: 228px;
+    }
 }
