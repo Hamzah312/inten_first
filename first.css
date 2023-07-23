@@ -3,6 +3,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    border-radius: 3px;
+    border-width: 2px;
+    padding: 16px 24px;
+}
+.btn-icon{
+    padding-left:12px;
+     font-size: medium;
+}
+.input-icon{
+    position: absolute;
+    font-size: medium;
 }
 /* screen 1 */
 body {
@@ -22,7 +33,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-
     margin: 0em 10em;
     flex: 1;
 }
@@ -60,9 +70,6 @@ body {
     background-color: transparent;
     align-self: flex-end;
     border: solid whitesmoke;
-    border-radius: 3px;
-    border-width: 2px;
-    padding: 15px 25px;
     color: whitesmoke;
 }
 
@@ -119,10 +126,7 @@ body {
     align-self: flex-start;
     flex: 1;
     border: solid #14af8f;
-    border-radius: 3px;
-    border-width: 2px;
     margin-top: 4em;
-    padding: 15px 25px;
     color: #14af8f;
 
 }
@@ -187,10 +191,7 @@ body {
     align-self: flex-start;
     flex: 1;
     border: solid #ea4c89;
-    border-radius: 3px;
-    border-width: 2px;
     margin-top: 2.5em;
-    padding: 15px 25px;
     color: #ea4c89;
 
 }
@@ -221,10 +222,10 @@ body {
 .screen4-btn {
     background-color: transparent;
     border: solid whitesmoke;
-    border-radius: 3px;
-    border-width: 2px;
-    padding: 15px 25px;
     color: whitesmoke;
+}
+.screen4-beer{
+    font-weight:bold
 }
 
 /** screen5 **/
@@ -272,6 +273,14 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.screen5-input-icon1{
+    right:30px;
+    top:8px; 
+    color:#a6a8ad
+}
+.screen5-input-icon2{
+    right:10px; top:10px; color:#6ec6ea
+}
 /** Footer **/
 .footer{
     display: flex;
@@ -279,4 +288,7 @@ body {
     align-items: center;
     background-color: white;
     height: 20vh;
+}
+.footer-perth{
+    color: rgb(111, 204, 235);
 }
