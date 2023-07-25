@@ -6,6 +6,13 @@
     border-radius: 3px;
     border-width: 2px;
     padding: 16px 24px;
+.btn-icon{
+    padding-left:12px;
+     font-size: medium;
+}
+.input-icon{
+    position: absolute;
+    font-size: medium;
 }
 
 /* screen 1 */
@@ -235,6 +242,9 @@ body {
     padding: 15px 24px;
     color: whitesmoke;
 }
+.screen4-beer{
+    font-weight:bold
+}
 
 /** screen5 **/
 .screen5 {
@@ -283,7 +293,14 @@ body {
     border-radius: 5px;
     padding: 10px;
 }
-
+.screen5-input-icon1{
+    right:30px;
+    top:8px; 
+    color:#a6a8ad
+}
+.screen5-input-icon2{
+    right:10px; top:10px; color:#6ec6ea
+}
 /** Footer **/
 .footer {
     display: flex;
@@ -296,7 +313,9 @@ body {
 .footer-text {
     font: normal 0.75em 'PT Sans', sans-serif;
 }
-
+.footer-perth{
+    color: rgb(111, 204, 235);
+}
 /** media queries **/
 @media screen and (max-width: 800px) {
     .screen1-con {
