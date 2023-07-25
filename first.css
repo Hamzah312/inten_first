@@ -5,7 +5,7 @@
     justify-content: center;
     border-radius: 3px;
     border-width: 2px;
-    padding: 16px 24px;
+    padding: 16px 24px;}
 .btn-icon{
     padding-left:12px;
      font-size: medium;
@@ -47,8 +47,12 @@ body {
 
 .menu {
     align-self: center;
+    font-size:36px
 }
-
+.free{
+    font-weight: bold;
+     font-style: italic;
+}
 .screen1-con {
     display: flex;
     flex: 4;
